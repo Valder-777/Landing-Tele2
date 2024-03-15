@@ -3,13 +3,13 @@
     font-family: "Tele2 TextSans";
     font-style: normal;
     font-weight: 400;
-    src: url("./fonts/Tele2TextSans/tele2_textsans-regular.woff") format("woff")}
+    src: url("../fonts/Tele2TextSans/tele2_textsans-regular.woff") format("woff")}
 
 @font-face {
   font-family: "Tele2 DisplaySerif";
   font-style: bold;
   font-weight: 700;
-  src: url("./fonts/Tele2 DisplaySerif/Tele2 DisplaySerif Web SHORT Bold.woff") format("woff")}
+  src: url("../fonts/Tele2 DisplaySerif/Tele2 DisplaySerif Web SHORT Bold.woff") format("woff")}
 
   /* Переменные */
 body {
