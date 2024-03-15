@@ -1,0 +1,105 @@
+
+/*Модальное окно с выбором города*/
+.popup-city {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #1f2229;
+  pointer-events: none;
+  transition: opacity 0.4s, background-color 0.4s, visibility 0.4s;
+}
+
+.popup-city__wrapper.cities-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(4, 1fr);
+  max-width: 100%;
+  
+}
+
+.visible {
+  pointer-events: all;
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup-city__form-wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 100px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+.modal_btn-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.modal_close-btn{
+  background: white;
+  color: #000;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+
+dialog h2{
+  padding-left: 15%;
+  color: white;
+  
+}
+
+.cities-wrapper__btn{
+  text-align: left;
+  padding-top: 35px;
+}
+
+
+/*Модальное окно для кнопки "Принять участие" (Акция)*/
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: var(--main-color);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
